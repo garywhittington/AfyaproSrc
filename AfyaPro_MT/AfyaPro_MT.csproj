@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA8BB196-0571-4079-99D1-6CB15E91583F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AfyaPro_MT</RootNamespace>
+    <AssemblyName>AfyaPro_MT</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AfyaPro_SoftwareLocker, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AfyaPro_SoftwareLocker\bin\Debug\AfyaPro_SoftwareLocker.dll</HintPath>
+    </Reference>
+    <Reference Include="AfyaPro_Types, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AfyaPro_Types\bin\Debug\AfyaPro_Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsAutoCodes.cs" />
+    <Compile Include="clsBillDebtReliefs.cs" />
+    <Compile Include="clsBilling.cs" />
+    <Compile Include="clsBillItemGroups.cs" />
+    <Compile Include="clsBillItems.cs" />
+    <Compile Include="clsBillItemSubGroups.cs" />
+    <Compile Include="clsClientGroupMembers.cs" />
+    <Compile Include="clsClientGroups.cs" />
+    <Compile Include="clsClientSubGroups.cs" />
+    <Compile Include="clsDiagnoses.cs" />
+    <Compile Include="clsQuarterlySupervisionReport.cs" />
+    <Compile Include="clsCTCClients.cs" />
+    <Compile Include="clsCTCCodes.cs" />
+    <Compile Include="clsCurrencies.cs" />
+    <Compile Include="clsDatabaseUpdate.cs" />
+    <Compile Include="clsDataField.cs" />
+    <Compile Include="clsDataImportExport.cs" />
+    <Compile Include="clsDepositAccounts.cs" />
+    <Compile Include="clsDiagnosesGroups.cs" />
+    <Compile Include="clsDiagnosesSubGroups.cs" />
+    <Compile Include="clsDischargeStatus.cs" />
+    <Compile Include="clsDXTIndicatorGroups.cs" />
+    <Compile Include="clsDXTIndicators.cs" />
+    <Compile Include="clsGridColumns.cs" />
+    <Compile Include="clsLaboratories.cs" />
+    <Compile Include="clsLabRemarks.cs" />
+    <Compile Include="clsLabTestGroups.cs" />
+    <Compile Include="clsLabTests.cs" />
+    <Compile Include="clsLabTestSubGroups.cs" />
+    <Compile Include="clsLanguage.cs" />
+    <Compile Include="clsMtuhaDiagnoses.cs" />
+    <Compile Include="clsPatientDiagnoses.cs" />
+    <Compile Include="clsPatientDocuments.cs" />
+    <Compile Include="clsPatientExtraFields.cs" />
+    <Compile Include="clsPatientLabTests.cs" />
+    <Compile Include="clsPaymentTypes.cs" />
+    <Compile Include="clsPriceCategories.cs" />
+    <Compile Include="clsPrintersSetup.cs" />
+    <Compile Include="clsRCHAnteNatalCare.cs" />
+    <Compile Include="clsRCHBirthComplications.cs" />
+    <Compile Include="clsRCHBirthMethods.cs" />
+    <Compile Include="clsRCHChildren.cs" />
+    <Compile Include="clsRCHClients.cs" />
+    <Compile Include="clsRCHControlData.cs" />
+    <Compile Include="clsRCHDangerIndicators.cs" />
+    <Compile Include="clsRCHFamilyPlanning.cs" />
+    <Compile Include="clsRCHFPlanMethods.cs" />
+    <Compile Include="clsRCHMaternity.cs" />
+    <Compile Include="clsRCHPostNatalCare.cs" />
+    <Compile Include="clsRCHVaccinations.cs" />
+    <Compile Include="clsRCHVaccines.cs" />
+    <Compile Include="clsRegistrations.cs" />
+    <Compile Include="clsReporter.cs" />
+    <Compile Include="clsReportGroups.cs" />
+    <Compile Include="clsReports.cs" />
+    <Compile Include="clsSearchEngine.cs" />
+    <Compile Include="clsSMS.cs" />
+    <Compile Include="clsSomCustomers.cs" />
+    <Compile Include="clsSomOrders.cs" />
+    <Compile Include="clsSomPackagings.cs" />
+    <Compile Include="clsSomPhysicalInventory.cs" />
+    <Compile Include="clsSomProductCategories.cs" />
+    <Compile Include="clsSomProducts.cs" />
+    <Compile Include="clsSomStores.cs" />
+    <Compile Include="clsSomSuppliers.cs" />
+    <Compile Include="clsSomTransferIns.cs" />
+    <Compile Include="clsSomTransferOuts.cs" />
+    <Compile Include="clsTreatmentPoints.cs" />
+    <Compile Include="clsCountries.cs" />
+    <Compile Include="clsCryptoService.cs" />
+    <Compile Include="clsDistricts.cs" />
+    <Compile Include="clsFacilitySetup.cs" />
+    <Compile Include="clsGlobal.cs" />
+    <Compile Include="clsMedicalStaffs.cs" />
+    <Compile Include="clsRegions.cs" />
+    <Compile Include="clsUserActions.cs" />
+    <Compile Include="clsUserGroupPrinters.cs" />
+    <Compile Include="clsUserGroups.cs" />
+    <Compile Include="clsUsers.cs" />
+    <Compile Include="clsWardRoomBeds.cs" />
+    <Compile Include="clsWardRooms.cs" />
+    <Compile Include="clsWards.cs" />
+    <Compile Include="clsWorkFlowAgent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="resScripts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>resScripts.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lang\English.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="AfyaPro_MT.licenseheader" />
+    <None Include="Scripts\views_mysql.sql" />
+    <None Include="Scripts\newdb_mysql.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resScripts.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>resScripts.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
